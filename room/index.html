@@ -4,79 +4,120 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW_6</title>
+    <title>room</title>
+
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <p><a href="#">CONTACT SALES</a></p>
-            <p><a href="tel:6467913726">646-791-37-26</a></p>
-            <p>
-                <a href="#">US</a>
-                <img src="./images/Group.svg" alt="vector down">
-            </p>
-        </nav>
-        <h1>ROOM</h1>
-        <nav>
-            <p><a href="#">PRODUCTS</a></p>
-            <p><a href="#">EXPLORE</a></p>
-            <p><a href="#">SHOP</a></p>
-            <p>
-                <img src="./images/Frame.svg" alt="location">
-                <a href="#">SHOWROOMS</a>
-            </p>
-            <p>
-                <img src="./images/Frame_1.svg" alt="basket">
-            </p>
-        </nav>
-        <section>
-            <img src="./images/room.svg" alt="room">
-        </section>
-    </header>
-    <main>
-        <section align="center">
-            <table width="100%">
+    <header class="header-block">
+        <nav class="nav-block-small">
+            <table class="nav-block-small-table">
                 <tr>
-                    <td colspan="4">
-                        <h2>
-                            Design that inspires a better way to work.
-                        </h2>
-                    </td>
-                    <td colspan="7">
-                        <h5>
-                            We've developed a series of purpose-built rooms that offer companies looking for change an affordable, sustainable, and flexible alternative to fixed construction and traditional office design.
-                        </h5>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6">
-                        <img src="./images/room_1.svg" alt="room pink">
-                        <p>Phone Booth</p>
-                    </td>
-                    <td colspan="6">
-                        <img src="./images/room_2.svg" alt="room grey">
-                        <p>Focus Room</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="6">
-                        <img src="./images/room_3.svg" alt="room green">
-                        <p>Meeting Room</p>
-                    </td>
-                    <td colspan="6">
-                        <img src="./images/room_4.svg" alt="room dark green">
-                        <p>Open Meeting Room</p>
+                    <td><p class="small-table-item"><a href="#">CONTACT SALES</a></p></td>
+                    <td><p class="small-table-item"><a href="tel:6467913726">646-791-37-26</a></p></td>
+                    <td>
+                        <p class="small-table-item">
+                            <a href="#">US</a>
+                            <img src="./images/Group.svg" alt="vector down">
+                        </p>
                     </td>
                 </tr>
             </table>
+        </nav>
+        <h1 class="block-logo">
+            <img src="./images/logo.svg" alt="logo 'room'">
+        </h1>
+        <nav class="nav-block-large">
+            <table class="nav-block-large-table">
+                <tr>
+                    <td>
+                        <p class="large-table-item">
+                            <a href="#">PRODUCTS</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="large-table-item">
+                            <a href="#">EXPLORE</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p class="large-table-item">
+                            <a href="#">SHOP</a>
+                        </p>
+                    </td>
+                    <td>            
+                        <p class="large-table-item">
+                            <img src="./images/Frame.svg" alt="location">
+                            <a href="#">SHOWROOMS</a>
+                        </p>
+                    </td>
+                    <td>
+                        <p>
+                            <img src="./images/Frame_1.svg" alt="basket">
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+        <section class="main-image-block">
+            <img class="main-image" src="./images/room.svg" alt="room">
         </section>
-        <section align="center">
-            <table width="100%">
+    </header>
+    <main>
+        <section class="main-section-design">
+            <table class="main-section-design-table">
                 <thead>
-                    <p>The world's leading brands choose ROOM.</p>
-                    <p>Over 3,000 and counting.</p>
+                    <tr>
+                        <td colspan="4">
+                            <h2 class="main-section-design-content">
+                                Design that <br> inspires a better <br> way to work.
+                            </h2>
+                        </td>
+                        <td colspan="7">
+                            <h5 class="main-section-design-content-additional">
+                                We've developed a series of purpose-built rooms that <br>
+                                offer companies looking for change an affordable, <br>
+                                sustainable, and flexible alternative to fixed <br>
+                                construction and traditional office design.
+                            </h5>
+                        </td>
+                    </tr>
                 </thead>
-                <tbody>
+                <tbody id="t-body-backing">
+                    <tr>
+                        <td colspan="6">
+                            <img src="./images/room_1.svg" alt="room pink">
+                            <p class="content-additional-subtitle ">Phone Booth</p>
+                        </td>
+                        <td colspan="6">
+                            <img src="./images/room_2.svg" alt="room grey">
+                            <p class="content-additional-subtitle ">Focus Room</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <img src="./images/room_3.svg" alt="room green">
+                            <p class="content-additional-subtitle ">Meeting Room</p>
+                        </td>
+                        <td colspan="6">
+                            <img src="./images/room_4.svg" alt="room dark green">
+                            <p class="content-additional-subtitle">Open Meeting Room</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="main-section-partners">
+            <table class="main-section-partners-table">
+                <thead>
+                    <p class="partners-table-title">The world's leading brands choose ROOM.</p>
+                    <p class="partners-table-subtitle">Over 3,000 and counting.</p>
+                </thead>
+                <tbody id="tbody-baking">
                     <tr>
                         <th colspan="2">
                             <img src="./images/nike.svg" alt="logotype nike">
@@ -140,34 +181,36 @@
                 </tbody>
             </table>
         </section>
-        <section align="center">
-            <img src="./images/slider_1.svg" alt="our team is working" width="70%">
-            <h4>
-                Our simple and seamless modular products allow teams to shape and then reshape their work environment with ease.
-            </h4>
-            <p>GET IN TOUCH</p>
-            <table width="100%">
+        <section class="main-slider">
+            <img src="./images/slider_1.svg" alt="our team is working" class="img-slider">
+            <p class="main-slider-title">
+                Our simple and seamless modular products allow <br>
+                teams to shape and then reshape their work <br>
+                environment with ease.
+            </p>
+            <p class="main-slider-subtitle">GET IN TOUCH</p>
+            <table class="main-slider-table">
                 <tr>
                     <th colspan="4">
                         <img src="./images/cost_effective.svg" alt="cost effective">
-                        <h4>Cost-effective</h4>
-                        <p>
+                        <h4 class="main-slider-table-title">Cost-effective</h4>
+                        <p class="main-slider-table-subtitle">
                             At a fraction of the cost of traditional construction, our pre-fab solutions create additional space for focused work and collaboration without constant noise, debris and distraction.
                         </p>
                     </th>
                     <th colspan="4">
                         <img src="./images/time_saving.svg" alt="time saving">
-                        <h4>
+                        <h4 class="main-slider-table-title">
                             Time Saving
                         </h4>
-                        <p>
+                        <p class="main-slider-table-subtitle">
                             Thoughtful design ensures simple installation in a few hours or less. And, because our products are safety ensured, you'll never have to spend time or money chasing after permits, contractors, and more.
                         </p>
                     </th>
                     <th colspan="4">
                         <img src="./images/flexible.svg" alt="flexible">
-                        <h4>Flexible</h4>
-                        <p>
+                        <h4 class="main-slider-table-title">Flexible</h4>
+                        <p class="main-slider-table-subtitle">
                             Unlike traditional construction, our purpose-built products were designed to adapt with your workspace and can easily be positioned in various places throughout your office, or to an entirely new location.
                         </p>
                     </th>
@@ -175,15 +218,17 @@
             </table>
         </section>
     </main>
-    <footer>
-        <table width="100%">
+    <footer class="foter-block">
+        <table class="footer-block-table">
             <tr>
                 <th colspan="2">
-                    <p>ROOM</p>
+                    <p class="room-logo-footer">
+                        <img src="./images/room-logo-footer.svg" alt="room-logo-footer">
+                    </p>
                 </th>
                 <th colspan="2">
-                    <p>About</p>
-                    <ul>
+                    <p class="footer-block-title">About</p>
+                    <ul class="footer-block-ul">
                         <li>Compare</li>
                         <li>Reviews</li>
                         <li>Risk_Free Trial</li>
@@ -194,8 +239,8 @@
                     </ul>
                 </th>
                 <th colspan="2">
-                    <p>Support</p>
-                    <ul>
+                    <p class="footer-block-title">Support</p>
+                    <ul class="footer-block-ul">
                         <li>FAQ</li>
                         <li>Booth Assembly</li>
                         <li>Delivery</li>
@@ -207,8 +252,8 @@
                     </ul>
                 </th>
                 <th colspan="2">
-                    <p>Follow us</p>
-                    <ul>
+                    <p class="footer-block-title">Follow us</p>
+                    <ul class="footer-block-ul">
                         <li>
                             <a href="#"><img src="./images/facebook.svg" alt="facebook"></a>
                         </li>
