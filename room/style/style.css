@@ -1,29 +1,158 @@
-.nav-top{
-    position: relative;
-    top: 10px;
-    left: 10px;
-    width: 99.3%;
-    background: rgb(70, 60, 60);
-    border-bottom: 5px solid #1E90FF;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap');
+
+.nav{
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    width:100%
+}
+.nav ul, .nav li{
+    list-style: none; 
+    margin: 0; 
+    padding: 0;
+}
+.nav ul{
+    position: relative; 
+    z-index: 597; 
+}
+.nav ul li{ 
+    float: left; 
+    min-height: 1px; 
+    vertical-align: middle;
+}
+.nav ul li.hover,
+.nav ul li:hover{
+    position: relative; 
+    z-index: 599; 
+    cursor: default;
+}
+.nav ul ul{
+    visibility: hidden; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    z-index: 598; 
+    width: 100%;
+}
+.nav ul ul li {
+    float: none;
+}
+.nav ul ul ul {
+    top: 0; 
+    left: auto; 
+    right: -99.5%; 
+}
+.nav ul li:hover > ul{ 
+    visibility: visible;
+}
+.nav ul ul{
+    bottom: 0; 
+    left: 0;
+}
+.nav ul ul{
+    margin-top: 0; 
 }
 
-.nav-top-ul > li{
-    display: inline-block;
-    padding: 25px;
+.nav a{ 
+    display: block; 
+    line-height: 1em; 
+    text-decoration: none; 
 }
 
-.nav-top-ul > li > a{
-    text-decoration: none;
-    color: #A9A9A9;
-    font-weight: 500;
-    font-family: sans-serif;
-    font-size: 18px;
+.nav {
+    background: #333;
+    border-bottom: 4px solid #1b9bff; 
+    font-family: 'Inter', sans-serif;
 }
 
-.nav-top-ul > li:hover{
-    background: #1E90FF;
+.nav > ul{ 
+    display: inline-block; 
 }
 
-.nav-top-ul > li:hover a{
-    color: white;
+.nav:after, .nav ul:after {
+    content: '';
+    display: block;
+    clear: both; 
+}
+
+.nav a {
+    background: #333;
+    color: #CBCBCB;
+    padding: 0 20px; 
+}
+
+.nav ul{ 
+    text-transform: uppercase; 
+}
+
+.nav ul ul {
+    border-top: 4px solid #1b9bff;
+    text-transform: none;
+    min-width: 190px; 
+}
+
+.nav ul ul a {
+    background: #1b9bff;
+    color: #FFF;
+    border: 1px solid #0082e7;
+    border-top: 0 none;
+    line-height: 150%;
+    padding: 16px 20px; 
+}
+
+.nav ul ul ul{ 
+    border-top: 0 none; 
+}
+
+.nav ul ul li{ 
+    position: relative 
+}
+
+.nav > ul > li > a{ 
+    line-height: 48px;  
+}
+
+.nav ul ul li:first-child > a { 
+    border-top: 1px solid #0082e7; 
+}
+
+.nav ul ul li:hover > a { 
+    background: #35a6ff; 
+}
+
+.nav ul ul li:last-child > a {
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 0 #1b9bff; 
+}
+
+.nav ul ul li:last-child:hover > a { 
+    border-radius: 0 0 0 3px; 
+}
+
+.nav ul ul li.sub-nav > a:after {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -8px;
+}
+
+.nav ul li:hover > a, .nav ul li.active > a {
+    background: #1b9bff;
+    color: #FFF;
+}
+    
+.nav ul li.sub-nav > a:after {
+    content: '+';
+    margin-left: 5px; 
+}
+
+.nav ul li.last ul {
+    left: auto;
+    right: 0; 
+}
+      
+.nav ul li.last ul ul {
+    left: auto;
+    right: 99.5%;
 }
