@@ -1,41 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
     
-        <link rel="stylesheet" href="./style/recet.css">
-        <link rel="stylesheet" href="./style/style.css">
-    
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style/recet.css">
+      <link rel="preload" href="GraphikLCG-Regular.ttf" as="font" type="font/ttf" crossorigin>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style/style.css">
     </head>
 <body>
-    <div class='nav'>
-        <ul>
-           <li><a href='index.html'>Home</a></li>
-           <li class='sub-nav'><a href='#'>Products</a>
-              <ul>
-                 <li class='sub-nav'><a href='#'>Product 1</a>
-                    <ul>
-                       <li><a href='#'>Sub Item</a></li>
-                       <li><a href='#'>Sub Item</a></li>
-                    </ul>
-                 </li>
-                 <li class='sub-nav'><a href='#'>Product 2</a>
-                    <ul>
-                       <li><a href='#'>Sub Item</a></li>
-                       <li><a href='#'>Sub Item</a></li>
-                    </ul>
-                 </li>
-              </ul>
-           </li>
-           <li><a href='#'>About</a></li>
-           <li><a href='#'>Contact</a></li>
-        </ul>
-    </div>
+   <header>
+      <div class="container">
+         <div class="header-block">
+            <div class="section-nav">
+               <h1><img src="./imgs/lokaliseLogo.svg" alt="lokalise logo"></h1>
+               <ul class="header-nav">
+                  <li>
+                     <a href="#">Product</a>
+                  </li>
+                  <li>
+                     <a href="#">Features</a>
+                  </li>
+                  <li>
+                     <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                     <a href="#">Case studies</a>
+                  </li>
+                  <li>
+                     <a href="#">Resources</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="btns-control">
+               <button id="logIn">Log in</button>
+               <button id="tryFree">Try it free</button>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main>
+      <div class="container-flex code-to-delivery">
+         <div>
+            <h2 class="title text-dark-xl">Accelerate <br> localization from <br> code to delivery</h2>
+            <p class="subtitle">
+               A localization and translation <br> 
+               management platform for agile teams. <br> 
+               Embrace automation, workflow <br> 
+               transparency, and fast project delivery.
+            </p>
+            <div class="btns-control">
+               <button id="tryFreeM">Try it free</button>
+               <button id="bookDemo">Book a demo</button>
+            </div>
+            <p class="content-bottom">Try all features for 14 days · No credit card required</p>
+         </div>
+         <div>
+            <img src="./imgs/mainBlockFlex-1.svg" alt="from code to delivery" id="codeToDelivery">
+         </div>
+      </div>
+      <div class="container companies-block">
+         <h3 class="full-title text-dark-l">The preferred localization <br> tool of 1500+ companies</h3>
+         <ul class="ul-companies">
+            <li><img src="./imgs/specializedM.svg" alt="specialized logo"></li>
+            <li><img src="./imgs/virqin.svg" alt="virqin logo"></li>
+            <li><img src="./imgs/tidal.svg" alt="tidal logo"></li>
+            <li><img src="./imgs/revolut.svg" alt="revolut logo"></li>
+            <li><img src="./imgs/yelp.svg" alt="yelp logo"></li>
+            <li><img src="./imgs/daimler.svg" alt="daimler logo"></li>
+         </ul>
+      </div>
+      <div class="container-flex control-process">
+         <div class="description-process">
+            <h3 class="text-dark-l">Control the localization process</h3>
+            <p class="text-dark-m">
+               Collaborate with your team in a single workspace. <br> 
+               Add and assign <span class="marker">tasks</span>, 
+               track progress, and enjoy a <br> 
+               seamless localization workflow where you know <br> 
+               who is doing what and when.
+            </p>
+            <p><a href="#" class="text-dark-600" id="start">Start now</a></p>
+         </div>
+         <div>
+            <img src="./imgs/project-app.svg" alt="project-app" id="project-app">
+         </div>
+      </div>
+      <div class="container-flex market">
+         <div><img src="./imgs/time-market.svg" alt="time-market" id="time-market"></div>
+         <div class="description-market">
+            <h3 class="text-dark-l">Shorten time to market</h3>
+            <p class="text-dark-m">
+               Localize your product in parallel with the <br> 
+               development cycle. Use the <span class="marker">Adobe XD</span>, <span class="marker">Figma</span>, <br> 
+               and <span class="marker">Sketch</span> plugins to start working on <br> 
+               translations as soon as the product design is <br> 
+               ready. No more idle waiting.
+            </p>
+            <p><a href="#" class="text-dark-600" id="start">Start now</a></p>
+         </div>
+      </div>
+      <div class="container-flex quality">
+         <div class="description-quality">
+            <h3 class="text-dark-l">Ensure quality</h3>
+            <p class="text-dark-m">
+               Use built-in tools — e.g. <span class="marker">translation memory</span>, machine <br> 
+               translation, and <span class="marker">QA checks</span>— to enhance the quality <br>
+               and cohesion of translations. Add product <br> 
+               <span class="marker">screenshots</span> for context and use the 
+               <span class="marker">in-context editors</span><br> 
+               for instant previews.
+            </p>
+            <p><a href="#" class="text-dark-600" id="start">Start now</a></p>
+         </div>
+         <div><img src="./imgs/quality.svg" alt="quality" id="quality"></div>
+      </div>
+      <div class="container-flex market">
+         <div class="show-php">
+            <div class="code-php">
+               <p class="text-dark-blue-xs">$client   <span class="text-green-xs">  = </span> new\Lokalise\LokaliseApiClient    
+                  <span class="text-green-xs">(</span> $token <span class="text-green-xs">)</span>;</p>
+               <p class="text-dark-blue-xs">$response   <span class="text-green-xs"> = </span> $client  
+                  <span class="text-green-xs">  -> </span> files  <span class="text-green-xs">  -> </span> download (</p>
+               <p class="text-dark-blue-xs">$projectid    ,</p>
+               <p>[</p>
+               <p class="text-blue-xs">'format'  => 'json'</p>
+               <p>]</p>
+               <p>);</p>
+            </div>
+            <p class="php-marker">php</p>
+         </div>
+         <div class="description-market">
+            <h3 class="text-dark-l">Less work for developers</h3>
+            <p class="text-dark-m">
+               Eliminate the hassle of localization and let developers <br> 
+               get back to their main tasks. Save hours with the <br> 
+               powerful <span class="marker">API</span>, <span class="marker">CLI</span>, <span class="marker">mobile SDKs</span>, 
+               and integrations with <br> 
+               <span class="marker">GitHub</span>, <span class="marker">Bitbucket</span>, 
+               <span class="marker">JIRA</span>, and more.
+            </p>
+            <p><a href="#" class="text-dark-600" id="start">Start now</a></p>
+         </div>
+      </div>
+      <div class="container-flex localise">
+         <h3 class="text-dark-l localise-title">What can you localize with Lokalise?</h3>
+         <div class="container-flex localise-row-1">
+            <div>
+               <img src="./imgs/web-apps.svg" alt="web-apps">
+               <p class="text-dark-600-25">Web apps</p>
+               <p class="text-dark-600-18">Any kind of web apps — backend,<br> 
+                  frontend, single page, blogs — you <br> 
+                  name it.
+               </p>
+            </div>
+            <div>
+               <img src="./imgs/mobille-apps.svg" alt="mobille-apps">
+               <p class="text-dark-600-25">Mobile apps</p>
+               <p class="text-dark-600-18">
+                  Upload any mobile platform language <br> 
+                  files. Embed <span class="marker">Lokalise iOS SDK</span> or <br> 
+                  <span class="marker">Lokalise Android SDK</span> if you prefer. </p>
+            </div>
+            <div>
+               <img src="./imgs/games.svg" alt="games">
+               <p class="text-dark-600-25">Games</p>
+               <p class="text-dark-600-18">Our cloud software is trusted by <br> 
+                  many leading game developers <br> 
+                  around the world.
+               </p>
+            </div>
+         </div>
+         <div class="container-flex localise-row-2">
+            <div>
+               <img src="./imgs/documents.svg" alt="documents">
+               <p class="text-dark-600-25">Documents</p>
+               <p class="text-dark-600-18">Upload your DOCX and static HTML <br> files.</p>
+            </div>
+            <div>
+               <img src="./imgs/e-mails.svg" alt="mail">
+               <p class="text-dark-600-25">Marketing e-mails</p>
+               <p class="text-dark-600-18">
+                  Integrate with Salesforce Marketing <br> 
+                  Cloud (coming soon) or translate <br> 
+                  static e-mails.
+               </p>
+            </div>
+            <div>
+               <img src="./imgs/lot.svg" alt="lot">
+               <p class="text-dark-600-25">IoT</p>
+               <p class="text-dark-600-18">We support most popular localization <br> file formats.</p>
+            </div>
+         </div>
+      </div>
+      <div class="container-flex boots">
+         <h3 class="text-dark-l">Boost your localization team’s productivity tenfold</h3>
+         <div class="container-flex boots-row">
+            <div id="boots-item">
+               <img src="./imgs/managers.svg" alt="managers" id="managers">
+               <p class="text-dark-600-30-left boots-subtitle">Managers</p>
+               <p class="text-dark-m">
+                  Update existing and launch new features <br> 
+                  and products while simultaneously <br> 
+                  localizing them in multiple languages. <br> 
+                  Streamline your team's workflow, <br> 
+                  maximize productivity, and speed up <br> 
+                  expansion to other markets.
+               </p>
+               <p><a href="#" class="a-learn-more text-dark-m">Learn more</a></p>
+            </div>
+            <div id="boots-item">
+               <img src="./imgs/developers.svg" alt="developers" id="developers">
+               <p class="text-dark-600-30-left boots-subtitle">Developers</p>
+               <p class="text-dark-m">
+                  Set up an integration with your code <br> 
+                  repository or your own custom SDK via <br> 
+                  Lokalise's powerful API. Do that once, and <br> 
+                  every time you make changes in the code, <br>
+                  they'll be automatically imported to <br> 
+                  Lokalise for translation.
+               </p>
+               <p><a href="#" class="a-learn-more text-dark-m">Learn more</a></p>
+            </div>
+            <div id="boots-item">
+               <img src="./imgs/translators.svg" alt="translators" id="translators">
+               <p class="text-dark-600-30-left boots-subtitle">Translators</p>
+               <p class="text-dark-m">
+                  Eliminate double-work and neverending <br> 
+                  revisions with visual context (screenshots) <br> 
+                  and live previews. Improve the quality and <br> 
+                  speed of your translations with built-in <br> 
+                  CAT tools, like autocomplete, inline <br> 
+                  machine translation, and translation <br> 
+                  memory.
+               </p>
+               <p><a href="#" class="a-learn-more text-dark-m">Learn more</a></p>
+            </div>
+         </div>
+      </div>
+      <div class="container-flex chief">
+         <div>
+            <p class="text-dark-400-30-left">
+               “Lokalise has turned a task we were dreading into an absolute <br> 
+               pleasure. Great platform, intuitive UX, powerful API. The <br> 
+               automatic text recognition for screenshots has been a <br> 
+               lifesaver, and over-the-air updates are the icing on the cake.”
+            </p>
+            <p class="subtitle-chief">Edward Cooper, Chief Mobile Officer</p>
+            <img src="./imgs/chaif-ravolut.svg" alt="logo revolut">
+         </div>
+         <div>
+            <img src="./imgs/edward-cooper.svg" alt="Edward Cooper">
+         </div>
+      </div>
+      <div class="container-flex management">
+         <div>
+            <img src="./imgs/cake.svg" alt="cake">
+         </div>
+         <div class="management-title">
+            The most-loved translation management software
+         </div>
+         <div class="marker-left"></div>
+         <div>
+            <p class="min-logo"><img src="./imgs/loveUs.svg" alt="c2"></p>
+            <p class="black-starts"><img src="./imgs/starsBlack.svg" alt="stars Black"></p>
+            <p>USERS LOVE US</p>
+         </div>
+         <div>
+            <p class="min-logo"><img src="./imgs/capterra.svg" alt="capterra logo"></p>
+            <p class="black-starts"><img src="./imgs/starsBlack.svg" alt="stars Black"></p>
+            <p>HIGHEST RATED</p>
+         </div>
+      </div>
+      <div class="container-flex integrate">
+         <h3 class="integrate-title">Integrate Lokalise with <br> your work tools</h3>
+         <p class="integrate-subtitle">Automate processes, eliminate routine tasks, <br> and track progress with ease.</p>
+         <img src="./imgs/bird.svg" alt="bird">
+         <button class="btn-see-all-int">See all integrations</button>
+      </div>
+      <div class="container-flex wait">
+         <h3 class="text-dark-xl">Localization made easy.</h3>
+         <h3 class="text-dark-xl">Why wait?</h3>
+         <p class="text-dark-m wait-subtitle">Try for free or let us show you how it works.</p>
+         <button id="btn-black-try-free">Try it free</button>
+      </div>
+   </main>
+   <footer class="footer-box">
+      <div class="container-flex">
+         <div>
+            <p class="tittle-footer">Case Studies</p>
+            <p class="footer-img-cyclists"><img src="./imgs/footer-img.svg" alt="cyclists"></p>
+            <p><img src="./imgs/specialized-2.svg" alt="specialized"></p>
+            <p class="text-dark-m fonts footer-riding">Riding towards global success <br> with a 100% teammate <br> enthusiasm</p>
+            <button id="footer-btn-read-more" class="text-dark-600">Read more</button>
+         </div>
+         <div class="container-flex uls">
+            <div>
+               <p class="tittle-ul-footer">Product</p>
+               <ul class="ul-product">
+                  <li><a href="#" class="a-text-small">For developers</a></li>
+                  <li><a href="#" class="a-text-small">For managers</a></li>
+                  <li><a href="#" class="a-text-small">For translators</a></li>
+                  <li><a href="#" class="a-text-small">For designers</a></li>
+                  <li><a href="#" class="a-text-small">Integrations</a></li>
+                  <li><a href="#" class="a-text-small">Security</a></li>
+                  <li><a href="#" class="a-text-small">Pricing</a></li>
+                  <li><a href="#" class="a-text-small">Automations</a></li>
+               </ul>
+            </div>
+            <div>
+               <p class="tittle-ul-footer">Support</p>
+               <ul class="ul-support">
+                  <li><a href="#" class="a-text-small">Contact</a></li>
+                  <li><a href="#" class="a-text-small">Documentation</a></li>
+                  <li><a href="#" class="a-text-small">Status</a></li>
+                  <li><a href="#" class="a-text-small">Product Updates</a></li>
+                  <li><a href="#" class="a-text-small">CLI Tool</a></li>
+                  <li><a href="#" class="a-text-small">API Reference</a></li>
+                  <li><a href="#" class="a-text-small">iOS and Android SDK</a></li>
+                  <li><a href="#" class="a-text-small">Supported File Formats</a></li>
+               </ul>
+            </div>
+            <div>
+               <p class="tittle-ul-footer">Company</p>
+               <ul class="ul-company">
+                  <li><a href="#" class="a-text-small">About</a></li>
+                  <li><a href="#" class="a-text-small">Blog</a></li>
+                  <li><a href="#" class="a-text-small">Careers | We`re Hiring</a></li>
+                  <li><a href="#" class="a-text-small">Case Studies</a></li>
+                  <li><a href="#" class="a-text-small">Media Kit</a></li>
+               </ul>
+            </div>
+            <div>
+               <p class="tittle-ul-footer">Legal</p>
+               <ul class="ul-legal">
+                  <li><a href="#" class="a-text-small">Terms of Service</a></li>
+                  <li><a href="#" class="a-text-small">Privacy Policy</a></li>
+                  <li><a href="#" class="a-text-small">Cookie Policy</a></li>
+                  <li><a href="#" class="a-text-small">Privacy Shield</a></li>
+                  <li><a href="#" class="a-text-small">DPA</a></li>
+                  <li><a href="#" class="a-text-small">List of Sub-processors</a></li>
+                  <li><a href="#" class="a-text-small">Candidates Privacy Notice</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container-flex footer-contant">
+         <div class="container-flex">
+            <p><img src="./imgs/lokalize-logo-footer.svg" alt="localise logo"></p>
+            <p class="footer-info marker-p">Localization workflow for your web and mobile <br> apps, games and digital content.</p>
+         </div>
+         <div class="container-flex info">
+            <p class="footer-info">©2001-2020</p>
+            <p class="footer-info">All rights reserved.</p>
+         </div>
+      </div>
+   </footer>
 </body>
 </html>
+
