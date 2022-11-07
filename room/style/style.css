@@ -115,6 +115,10 @@
         width: 100%;
         margin: 0 auto;
     }
+
+    img{
+        max-width: 100%;
+    }
     
     .header-block{
         display: flex;
@@ -686,7 +690,144 @@
     #codeToDelivery{
         display: none;
     }
+
+    .ul-companies{
+        flex-direction: column;
+    }
+
+    .ul-companies li{
+        padding: 15px 0;
+    }
+
+    .footer-info{
+        flex-direction: column;
+    }
+
+    .tittle-footer{
+        text-align: center;
+    }
+
+    #footer-btn-read-more{
+        padding-bottom: 25px;
+    }
 }
+
+
+@media all and (max-width: 640px) {
+    .header-nav{
+        flex-direction: column;
+    }
+
+    .code-to-delivery{
+        padding: 100px 20px;
+    }
+
+    .control-process{
+        padding: 50px 25px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #project-app{
+        width: 100%;
+        left: 0;
+    }
+
+    .market{
+        padding: 50px 25px;
+        flex-direction: column-reverse;
+    }
+
+    #time-market{
+        width: 100%;
+    }
+
+    .quality{
+        padding: 0 25px;
+        flex-direction: column;
+    }
+
+    #quality{
+        width: 100%;
+        left: 0;
+    }
+
+    .localise{
+        padding: 0 25px;
+    }
+
+    .localise-row-1{
+        flex-direction: column;
+    }
+
+    .localise-row-2{
+        flex-direction: column;
+        padding-bottom: 75px;
+    }
+
+    .boots{
+        padding: 90px 25px;
+    }
+
+    .boots-row{
+        padding-top: 75px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #boots-item{
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .boots-subtitle{
+        text-align: center;
+    }
+
+    .chief{
+        padding: 70px 25px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .management{
+        flex-direction: column;
+        padding: 80px 25px;
+    }
+
+    .marker-left{
+        display: none;
+    }
+
+    .integrate{
+        padding: 75px 25px;
+    }
+
+    .integrate-title{
+        font-size: 55px;
+        line-height: 65px;
+    }
+
+    .text-dark-xl{
+        text-align: center;
+    }
+
+    .footer-box{
+        padding: 90px 25px 0 25px;
+    }
+
+    .uls{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .ul-product, .ul-support, .ul-company, .ul-legal{
+        padding: 25px;
+    }
+}
+
+
 
 
 
